@@ -5,6 +5,7 @@ Use this skeleton to get a quick start on writing CLI applications - for EVE or 
 - Redis
 - MongoDB
 - cURL
+
 Altho `Redis` and `MongoDB` can both be removed from the requirements if you so please.
 
 # Install and use
