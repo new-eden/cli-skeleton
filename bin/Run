@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+// Load the autoloader
+require_once(__DIR__ . "/../vendor/autoload.php");
+
+// Check the config file exists.
+if(!file_exists(__DIR__ . "/../src/Config/config.php"))
+    throw new \Exception("Error, config.php file does not exist. Please copy config.sample.php to config.php in the same directory (" . __DIR__ . "/src/Config/..)");
+
+// Load the CLI components
+$cli = new \Symfony\Component\Console\Application();
+
+// Commands to add to be executable
+$cli->add(new \App\Commands\StartCommand());
+$cli->add(new \App\Commands\StartResqueCommand());
+
+// Start the CLI interface
+$cli->run();

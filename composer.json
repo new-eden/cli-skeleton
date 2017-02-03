@@ -1,0 +1,30 @@
+{
+  "name": "new-eden/cli-skeleton",
+  "description": "Skeleton for creating CLI tools.",
+  "keywords": ["cli", "symfony", "skeleton"],
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michael Karbowiak",
+      "email": "karbowiak@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^7.0",
+    "ext-redis": "*",
+    "ext-curl": "*",
+    "ext-mongodb": "*",
+    "chrisboulton/php-resque": "^1.2",
+    "symfony/console": "^3.2.2",
+    "monolog/monolog": "^1.22.0",
+    "predis/predis": "^1.1.1",
+    "mongodb/mongodb": "^1.0.2",
+    "league/container": "^2.2.0"
+  }
+}
